@@ -1,5 +1,5 @@
 const Sequelize = require ('sequelize');
-const sequelize = new Sequelize(process.env.DB_SCHEMA|| 'postgres',
+const sequelize = new Sequalize(process.env.DB_SCHEMA|| 'postgres',
 process.env.DB_USER || 'postgres',
 process.env.DB_PASSWORD || '',
 {
@@ -23,6 +23,6 @@ const Person = sequelize.define('Person', {
 });
 
 module.exports = {
-    sequelize: sequelize,
+    sequalize: sequelize,
     Person: Person
 }

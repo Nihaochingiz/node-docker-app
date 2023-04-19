@@ -1,3 +1,3 @@
 var db = require ('../database.js');
 
-db.sequalize.sync()
+db.sequelize.sync()
